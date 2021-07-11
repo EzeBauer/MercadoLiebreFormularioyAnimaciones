@@ -33,7 +33,7 @@
  }
 
 .encabezado-buscar-form-busqueda {
-  height:4vh; 
+  height:6vh; 
   border: none;
   border-radius: 4px 0 0 4px;
   width: 87%;
@@ -42,14 +42,14 @@
 .encabezado-buscar-form button{
    border: none;
    border-radius: 0px 4px 4px 0;
-    height:4vh;
+  height:6vh;
 
  } 
  .fa-search{
   color: gray;
-  height: 4vh;
+  height: 6vh;
   background-color: #fff;
-  padding-top: 12px;
+  padding-top: 6px; 
     
  }
 
@@ -270,7 +270,7 @@ footer article p {
  }
   
 .encabezado-buscar-form-busqueda{
-  height:2vh; 
+  height:3vh; 
   margin-right: 5px;
   border-radius: 2px;
   width: 85%;
@@ -278,11 +278,11 @@ footer article p {
 }
 .encabezado-buscar-form button{
   border-radius:2px;
-  height:2vh; 
+  height:3vh; 
 }
 .fa-search{
-  width: 1.5vw; 
-  height: 2vh;
+  width: 2vw; 
+  height: 3vh;
   padding-top: 0px;
     
  }
