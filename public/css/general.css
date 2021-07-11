@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --color-amarillo: #eac926;
+  --color-azul: #03264c;
+  --color-celeste: #1259c3;
+  --color-grisOscuro: #666;
+  --color-grisClaro: #ebebeb;
+  --color-verde: #39b54a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*cuando le das padding el elemento "engorda"
+    con esta propiedad se respeta el ancho y alto que le asignamos*/
+  font-family:'Roboto';
+}
+body{
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}

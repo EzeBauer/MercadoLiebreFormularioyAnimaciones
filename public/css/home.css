@@ -1,0 +1,387 @@
+/*------HEADER--------*/
+@media (min-width:270px){
+.encabezado {
+  background-color: var(--color-amarillo);
+  width: 100%;
+}
+.encabezado-logo{
+  display: flex;
+  width: 100%;
+  padding: 20px 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+}
+.encabezado-logo-imagen {
+  width: 45%;
+  }
+
+.encabezado-buscar {
+  display: block;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 45%;
+  
+}
+.encabezado-buscar-form{
+  display: flex;
+  flex-wrap: wrap;
+  height: 33px;
+   padding-right: 10px;
+  margin-bottom: 30px;
+ }
+
+.encabezado-buscar-form-busqueda {
+  height:4vh; 
+  border: none;
+  border-radius: 4px 0 0 4px;
+  width: 87%;
+ 
+   }
+.encabezado-buscar-form button{
+   border: none;
+   border-radius: 0px 4px 4px 0;
+    height:4vh;
+
+ } 
+ .fa-search{
+  color: gray;
+  height: 4vh;
+  background-color: #fff;
+  padding-top: 12px;
+    
+ }
+
+.encabezado .subtitulo {
+  margin: 15px 45px;
+  font-size: 1em;
+}
+.navegacion{
+  display: none;
+  font-size: 0.6em;
+}
+
+.conten-burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+.encabezado .burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+  width: 11vw;
+  height: 5vh;
+  background-color: #0443ae;
+  border-radius: 5px;
+  margin-top: 0;
+}
+.fa-bars {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.banner {
+  width: 100%;
+  height: 13vh;
+}
+
+.banner img{
+  width: 100%;
+ height: 100%;
+}
+/*-------------MAIN---------------*/
+
+main {
+  background-color: var(--color-grisClaro);
+  width: 100vw;
+  padding: 10px 0; 
+  }
+
+main article{
+  background-color: #ffff;
+  margin: 10px auto;
+  width: 90%;
+}
+main article:hover{
+  box-shadow:0px 0px 20px gray;
+}
+main h2 {
+  color: var(--color-grisOscuro);
+  text-align: center;
+  padding: 5px; 
+  font-size: 1.3em;
+}
+article img {
+  width: 100%;
+  height: 70%;
+}
+
+
+
+main article .descripcion {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  border-top: solid 1px #ebebeb;
+  padding: 15px 10px;
+  position: relative;
+    
+}
+
+
+main section article i.fa-truck{
+ display: block;
+ color: var(--color-verde);
+ font-size: 16px;
+ padding: 5px;
+ width: 30px;
+ height: 30px;
+ border: 1px solid #39b54a;
+ background-color: #FFF;
+ border-radius: 50%;
+ position: absolute;
+ right: 20px;
+ top: -15px;
+ animation-name: desplazamiento;
+ animation-duration: 2s;
+ animation-iteration-count: 1;
+ animation-direction: alternate;
+}
+@keyframes desplazamiento{
+	0%{
+		margin-left:0px;
+		transform: rotate(0deg);/*Esta propiedad hace que valla dando vueltas*/
+
+	}
+	50%{
+		margin-right:270px;/* cuando este al 50% es decir a los 1.5 segundos*/
+		transform: rotate(360deg);
+	}
+	75%{
+		  background: lightblue;
+    	transform: rotate(0deg);
+    	border: 6px dashed blue;
+	}
+
+
+	100%{
+		margin-left:0px;
+		
+	}
+}
+section article h3 {
+  display:none;
+  font-size: 0.8em;
+  font-weight: 300;
+  color: var(--color-grisOscuro);
+  margin-top: 11px;
+  opacity: 0;
+}
+main article .descripcion h3:hover{
+  opacity: 1;
+}
+
+section article p {
+  width: 40%;
+  font-size: 1em;
+  color: var(--color-grisOscuro);
+}
+article span {
+  width: 60%;
+  color: var(--color-verde);
+  margin-bottom: 10px;
+  font-size: 0.8em;
+
+}
+
+
+/*---------FOOTER--------*/
+
+footer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px 20px;
+  margin-top: 30px; 
+  
+}
+
+footer article {
+  padding: 0 30px 50px;
+  text-align: center;
+}
+
+footer article i {
+  font-size: 2em;
+  margin-bottom: 5px;
+  color: var(--color-azul);
+}
+
+footer article h3 {
+  font-size:1em ;
+}
+footer article p {
+  font-size:0.8em ;
+}
+.copyright {
+  text-align: left;
+  font-size: 0.8em;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+}
+
+/*---------------------MEDIA QUERIES------------------------*/
+
+@media (min-width:520px){
+ body{
+    font-size: 16px;
+  }
+  .encabezado-logo{
+  flex-wrap:nowrap;
+ 
+}
+.encabezado-logo-imagen {
+  width: 35%;
+  height: 100%;
+  padding-left:  30px;
+  }
+
+.encabezado-logo-imagen img{
+  width: 100%;
+  height: 100%;
+}
+
+.encabezado-buscar {
+  margin-left: 0px;
+  width: 30%;
+  
+ }
+
+ .encabezado-logo p{
+   width: 35%;
+ }
+  
+.encabezado-buscar-form-busqueda{
+  height:2vh; 
+  margin-right: 5px;
+  border-radius: 2px;
+  width: 85%;
+  
+}
+.encabezado-buscar-form button{
+  border-radius:2px;
+  height:2vh; 
+}
+.fa-search{
+  width: 1.5vw; 
+  height: 2vh;
+  padding-top: 0px;
+    
+ }
+ 
+ .encabezado .subtitulo {
+  margin: 0;
+  font-size: .65em;
+}
+
+.navegacion{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu1 ul, .menu2 ul{
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+}
+.menu1 ul li, .menu2 ul li{
+  display:block;
+  margin: 8px;
+ } 
+ 
+.conten-burger {
+  display: none;
+ 
+}
+
+.banner {
+  display:block;
+}
+
+.main .productos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.main article h3{
+  display:inline-block;
+}
+
+.main article {
+   width: 48%;
+  box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+}
+
+
+  
+}
+
+
+
+@media (min-width:769px){
+
+ body{
+    font-size: 18px;
+  }
+
+  .encabezado-logo-imagen {
+  width: 33%;
+  }
+
+.encabezado-buscar {
+  width: 35%;
+  }
+
+ .encabezado-logo p{
+   width: 30%;
+ }
+
+.encabezado-buscar-form-busqueda{
+  width: 80%;
+  
+}
+  .main article{
+    width: 24.5%;
+
+  }
+  .navegacion{
+  font-size: 0.8em;
+}
+.encabezado-buscar{
+  padding-right: 60px;
+ 
+ }
+footer{
+  width: 100%;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items:baseline;
+}
+footer article{
+  width: 33%;
+}
+
+footer article i:hover{
+
+  color: aqua;
+}
+}
